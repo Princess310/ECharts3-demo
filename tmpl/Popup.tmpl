@@ -1,0 +1,31 @@
+<script id="Popup" type="text/html">
+<div class="Popup" tabindex="0">
+	<div class="popup-modal modal-content">
+		<div class="popup-header modal-header">
+			{{#if headerTmpl}}
+				{{{headerTmpl}}}
+			{{else}}
+				{{>Popup-header-default}}
+			{{/if}}
+		</div>
+		<div class="popup-body modal-body">
+		    <div id="myChart"></div>
+		</div>
+		<div class="popup-footer modal-footer">
+			{{#if footerTmpl}}
+				{{{footerTmpl}}}
+			{{else}}
+				{{>Popup-footer-default}}
+			{{/if}}
+		</div>
+	</div>
+</div>
+</script>
+
+<script id="Popup-footer-default" type="text/html">
+	<button type="button" class="btn btn-primary save">OK</button>
+</script>
+
+<script id="Popup-header-default" type="text/html">
+	<div class="modal-title wrap-long-label">{{title}}</div>
+</script>

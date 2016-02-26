@@ -1,0 +1,127 @@
+/* --------- Variables --------- */
+/* --------- Colors --------- */
+$txt-dark: #333333;
+$txt: #555555;
+$txt-light: #999999;
+$txt-lighter: #C0C0C0;
+$txt-lightest: #DDDDDD;
+$txt-link: #509ED4;
+$txt-alert: #DA4F4A;
+$txt-white: #FFFFFF;
+$txt-count: #B7CF98;
+$txt-date: #4DA2DB;
+$txt-display-name: #2C90B0;
+$txt-alert: #a94442;
+
+$bdr-black: #000000;
+$bdr-darkest: #333333;
+$bdr-darker: #555555;
+$bdr-dark: #999999;
+$bdr: #CECECE;
+$bdr-light: #DDDDDD;
+$bdr-lighter: #EFEFEF;
+$bdr-lightest: #F8F8F8;
+$bdr-active: #509ED4;
+$bdr-active-2: #6BCBE5;
+$bdr-swich-on: #7AD70E;
+$bdr-white: #FFFFFF;
+
+$bkg-darkest: #555555;
+$bkg-darker: #C0C0C0;
+$bkg-dark: #CECECE;
+$bkg: #DDDDDD;
+$bkg-light: #EFEFEF;
+$bkg-lighter: #F8F8F8;
+$bkg-active: #509ED4;
+$bkg-active-2: #6BCBE5;
+$bkg-highlighted: #DAF2F8;
+$bkg-white: #FFFFFF;
+$bkg-checked: #EFFAFC;
+$bkg-swich-on: #7AD70E;
+$bkg-side: #f5f5f5;
+
+$ico: #CECECE;
+$ico-hover: #C0C0C0;
+$ico-alert: #ECA7A4;
+$ico-link: #509ED4;
+$ico-clear: #ff0000;
+$color-brand: #FC7928;
+
+
+$color-bkg-light: #FAFAFA;
+$color-bkg: #F1F1F1;
+
+$color-bdr-light: #ccc;
+$color-bdr: #DDDDDD;
+$color-bdr-dark: #999;
+$color-bdr-strong: $color-brand;
+
+$color-txt-darker: #000;
+$color-txt-dark: #111;
+$color-txt: #333;
+$color-txt-light: #555;
+$color-txt-lighter: #888;
+$color-txt-lightest: #ccc;
+
+$color-txt-title: #888;
+$color-txt-strong: $color-brand;
+$color-txt-unselected: #777;
+$color-txt-table-th: #555;
+$color-txt-h3: #5B99B3;
+$color-txt-nav: #0492F9;
+$color-txt-chrome: #5D9BB1;
+
+$color-unopened: #F8BA6E;
+$color-opened: #5BCCE2;
+$color-responsed: #5DC179;
+
+$color-btn-default-bg: $color-bkg;
+$color-btn-default-bdr: $color-bkg;
+$color-btn-default-txt: #aaa;
+
+$color-btn-primary-bg: #378cc5;
+$color-btn-primary-bdr: #378cc5;
+$color-btn-primary-txt: #fff;
+$color-btn-green-th: #1D8D53;
+
+$color-ico-light: #999;
+
+$color-placeholder: #999999;
+
+$check-circle: #e7e7e7;
+$check-circle-selected: #4a90e2;
+
+$features-table-dots: #cbcbcb;
+$features-add-child: #50a2d9;
+$tasks-background: #e7e7e7;
+
+$login-title-brite: #9B9A99;
+
+$brand-left-color: #9e9a99;
+$dx-color: #72c5e9;
+$item-content-color: #a69999;
+$item-content-numpre: #4a90e2;
+$navbar-color: #d26911;
+
+$border-color: #eeeeee;
+$border-plus-circle: #e5e5e5;
+/* --------- /Colors --------- */
+/* --------- /Variables --------- */
+
+/* --------- Mixins --------- */
+@define-mixin fitparent{
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
+@define-mixin clearfix{
+  &:before,
+  &:after {
+    content: " "; 
+    display: table; 
+  }
+  &:after {
+    clear: both;
+  }
+}
+/* --------- /Mixins --------- */

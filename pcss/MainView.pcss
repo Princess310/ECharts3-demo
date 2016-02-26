@@ -1,0 +1,74 @@
+@import "../common/pcss/0_utils.pcss";
+
+.MainView {
+@mixin fitparent;
+
+    .PopupDialogGlass {
+        @mixin fitparent;
+        display: none;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.3;
+        z-index: 2998;
+    }
+
+	.navbar-default {
+		height: 48px;
+		min-height: 48px;
+		border-radius: 0px;
+		.dropdown-toggle {
+			height: 48px;
+		}
+	}
+	.MainView-content {
+		position: absolute;
+		top: 48px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.MainView-leftPanel {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	.MainView-contentPanel {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 180px;
+	}
+
+	.brand-left {
+		color: $brand-left-color;
+	}
+
+	.brand-right {
+		color: $bdr-active;
+	}
+
+	.dx {
+		color: $dx-color;
+		margin-right: 5px;
+		vertical-align: top;
+		font-size: 16px;
+	}
+
+	.ico-settings {
+		font-size: 20px;
+		margin-top : -1px;
+		color: $ico;
+	}
+
+	.ico-arrow_drop_down {
+		margin-top: -3px;
+		color: $ico;
+		margin-right: -11px;
+	}
+}

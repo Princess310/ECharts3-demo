@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="dest/css/bundle.css" type="text/css" />
+	<style type="text/css">
+		::-webkit-scrollbar{width:6px;height:6px}
+		::-webkit-scrollbar-button:vertical{display:none}
+		::-webkit-scrollbar-track:vertical{background-color:transparent;}
+		::-webkit-scrollbar-track-piece{background-color:transparent;}
+		::-webkit-scrollbar-thumb:vertical{background-color:#3792ef;border-radius:6px}
+		::-webkit-scrollbar-thumb:vertical:hover,
+		::-webkit-scrollbar-thumb:vertical:active {background-color: #2e86ef}
+	</style>
+</header>
+<body>
+	<!-- 引入 ECharts 文件 -->
+	<script src="dest/js/bundle.js"></script>
+	<script src="dest/js/echarts.min.js"></script>
+	<script src="dest/js/china.js"></script>
+	<script src="dest/js/world.js"></script>
+	<script type='text/javascript' src='bootstrap/js/bootstrap.min.js'></script>
+	
+	<script type="text/javascript">
+		$(function(){
+			brite.display("MainView").done(function(){
+				app.ctx.init();
+			});
+		});
+	</script>
+</body>
+</html>

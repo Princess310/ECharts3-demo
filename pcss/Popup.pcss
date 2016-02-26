@@ -1,0 +1,68 @@
+@import "../common/pcss/0_utils.pcss";
+
+.Popup{
+	position: absolute;
+	top: 80px;
+	left: 440px;
+	z-index: 99;
+	&:focus{
+		outline: none;
+	}
+	&.transitioning{
+		transition: transform .2s ease-in;
+	}
+	+ .Popup-screen{
+		position: fixed;
+		pointer-events: none;
+		background: rgba(35, 31, 32, .1);
+		z-index: 98;
+	}
+	.popup-modal{
+		border: none;
+		box-shadow: none;
+		border: 4px solid #2477ba;
+		.popup-header{
+			padding: 0;
+			cursor: pointer;
+			height: 32px;
+			border: none;
+			background: #2477ba;
+			.modal-title{
+				position: absolute;
+				top: 4px;
+				left: 16px;
+				right: 16px;
+				max-width: 95%;
+				letter-spacing: .6px;
+				text-align: center;
+			}
+		}
+
+		.popup-footer{
+			margin-top: 0;
+			padding: 0px 16px 16px 16px;
+			height: 64px;
+			border-top: none;
+			background: #e6e7e8;
+			.btn{
+				position: relative;
+				height: 32px;
+				line-height: 16px;
+				min-width: 64px;
+				margin-top: 16px;
+			}
+			.cancel{
+				margin-right: 8px;
+			}
+			.delete{
+				position: relative;
+				float: left;
+			}
+		}
+
+		.popup-body{
+			line-height: 32px;
+			padding: 0px 16px 0 16px;
+		}
+	}	
+}
