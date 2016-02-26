@@ -2,5 +2,7 @@
 ECharts3-demo-learn
 
 > Just to do:
-    git clone https://github.com/Princess310/ECharts3-demo
-    Then, open the index.html is ok
+        1. git clone https://github.com/Princess310/ECharts3-demo
+        2. npm install
+        3. run the command gulp in your console
+        4. then, open the index.html is ok
